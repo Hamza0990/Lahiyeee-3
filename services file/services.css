@@ -1,0 +1,1544 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* roboto */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* oswold */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: color 0.3s ease;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 11px;
+    word-spacing: 11px;
+}
+
+.icon-buton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon i:hover {
+    color: #fab700 !important;
+    transition: color 0.6s ease;
+}
+
+.inner-text {
+    border-radius: 3px;
+    font-family: "Roboto", sans-serif;
+    background-color: #fab700;
+    color: white;
+    font-size: 12px;
+    width: 100px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-text:hover {
+    border: 1px solid #fab700;
+    background-color: white;
+    color: black;
+    transition: color 1s ease;
+}
+
+.birlikde {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    border-radius: 3px;
+    position: relative;
+    /* display: inline-block; */
+    font-family: "Roboto", sans-serif;
+}
+
+.dropbtn {
+    background-color: #f9f9ff;
+    color: #777777;
+    font-weight: 600;
+    padding: 7px 11px;
+    font-size: 13px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #eeeeee;
+}
+
+.dropdown-content {
+    margin-top: 27px;
+    border: 1px solid #f9f9ff;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 80px;
+    font-size: 13px;
+    box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: #777777;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #cfcbcb;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+hr {
+    border: 0.1px solid #f3f2f2;
+    width: 100%;
+
+}
+
+.names {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.series {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.mgf {
+    color: black;
+}
+
+.series li:hover {
+    color: #fab700;
+}
+
+.bars {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+}
+
+/* names ler bitdi  */
+/* header bitdi */
+
+.fonsekil {
+  background-image: url(./img/home-banner.jpg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#home {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#about {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+
+#right-icon {
+    margin-left: 10px;
+}
+
+#home:hover {
+    color: #fab700;
+}
+
+#about:hover {
+    color: #fab700;
+}
+
+#about-us {
+    color: #fff;
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+/* sekil olan bitdi */
+
+#about-hisory {
+    font-size: 36px;
+    font-family: "Oswald", sans-serif;
+    color: #222222;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+#about-lorem-p {
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777777;
+    margin-bottom: 30px;
+
+}
+
+#about-button {
+    background: #222222;
+    display: inline-block;
+    color: #fff;
+    line-height: 40px;
+    padding: 0px 28px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+    border: none;
+    margin-bottom: 30px;
+
+}
+
+#about-button:hover{
+    background-color: #fab700;
+    color: #222222;
+    transition: all 300ms linear 0s;
+}
+#about-img-box{
+    width: 580px;
+    height: 460px;
+}
+
+#img-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 130px;
+    gap: 130px;
+}
+
+.icon-buton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon i:hover {
+  color: #fab700 !important;
+  transition: color 0.6s ease;
+}
+
+.inner-text {
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  background-color: #fab700;
+  color: white;
+  font-size: 12px;
+  width: 100px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-text:hover {
+  border: 1px solid #fab700;
+  background-color: white;
+  color: black;
+  transition: color 1s ease;
+}
+
+.birlikde {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  padding: 10px 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  border-radius: 3px;
+  position: relative;
+  /* display: inline-block; */
+  font-family: "Roboto", sans-serif;
+}
+
+.dropbtn {
+  background-color: #f9f9ff;
+  color: #777777;
+  font-weight: 600;
+  padding: 7px 11px;
+  font-size: 13px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+}
+
+.dropdown-content {
+  margin-top: 27px;
+  border: 1px solid #f9f9ff;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 80px;
+  font-size: 13px;
+  box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  z-index: 1;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: #777777;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #cfcbcb;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+hr {
+  border: 0.1px solid #f3f2f2;
+  width: 100%;
+
+}
+
+.names {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.series {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.mgf {
+  color: black;
+}
+
+.series li:hover {
+  color: #fab700;
+}
+
+.bars {
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+
+/* names ler bitdi  */
+
+
+
+
+/* fon sekili bitdi */
+
+
+.bulid-dream {
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  justify-content: center;
+  text-align: center;
+}
+
+.bulid {
+  color: white;
+  text-align: center;
+}
+
+.dream {
+  color: black;
+  background-color: #fab700;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* build your dream bitdi*/
+.fonsoz {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.ipsum {
+  padding-top: 3px;
+}
+
+.discover-now {
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  background-color: #222222;
+  color: #fab700;
+  font-size: 12px;
+  width: 165px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-top: 40px;
+
+}
+
+.discover-now:hover {
+  color: #222222;
+  background-color: #fab700;
+  transition: color 1s ease;
+}
+
+/* sekiler bitdi  */
+/* 1 section bitdi */
+
+.our-offerd-fon {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+/* fon-bitdi */
+
+.our-offerd {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  color: #222222;
+  font-weight: 500;
+  text-align: center;
+}
+
+.our-lorem {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  line-height: 24px;
+  color: #777777;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.building {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #222222;
+}
+
+.building-lorem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 14px;
+}
+
+
+#building-lorem-box2{
+    margin-bottom: 100px;
+}
+
+.building-drawings {
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.our-the-boxs2{
+    display: flex ;
+    justify-content: center;
+}
+
+
+
+.building-drawings:hover {
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  transition: all 300ms linear 0s;
+}
+
+
+.building {
+  display: flex;
+  justify-content: center;
+}
+
+.building-lorem {
+  display: flex;
+  flex-direction: column;
+  color: #777777;
+  text-align: center;
+  align-items: center;
+  padding: 50px 20px;
+  height: 310px;
+}
+
+.building-img {
+  display: flex;
+  justify-content: center;
+
+}
+
+.our-boxs {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+/* latest basladi */
+.latest-img {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.latest-img img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-box img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+  overflow: hidden;
+}
+
+.overlay {
+  font-family: "Oswald", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #eebb23f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.overlay p {
+  font-size: 15px;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+.img-box:hover .overlay {
+  opacity: 1;
+  overflow: hidden;
+}
+
+/* Meet Our Expert Members basladi */
+.meet-img2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-box2 img {
+  width: 100%;
+  transition: transform 0.4s ease;
+  overflow: hidden;
+
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fab700c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  overflow: hidden;
+
+}
+
+.overlay2 i {
+  color: grey;
+  font-size: 10px;
+}
+
+.img-box2:hover .overlay2 {
+  opacity: 1;
+}
+
+.img-3 {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+}
+
+.bosluq {
+  padding-top: 120px;
+}
+
+.overlay2 i:hover {
+  color: #222222;
+  font-size: 14px;
+}
+
+.overlay2 i {
+  font-size: 14px;
+}
+
+.meet-h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 18;
+  text-align: center;
+}
+
+.meet-p {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #777777
+}
+
+.meet-the-img-boxs {
+  overflow: hidden;
+}
+
+/* burda section 4 bitdi */
+
+
+.some-fetures {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  color: #222222;
+  font-weight: 500;
+  text-align: center;
+}
+
+.some-lorem {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  line-height: 24px;
+  color: #777777;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.some-services {
+  margin-top: 120px;
+}
+
+.test-img-div {
+  position: relative;
+}
+
+
+.some-expert {
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  background-color: white;
+  width: 360px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+}
+
+#some-expert-box {
+  font-size: 19px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+#some-expert-lorem {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 14px;
+}
+
+#user {
+  font-size: 25px;
+  padding-right: 35px;
+}
+
+#some-expert-box:hover {
+  color: #fab700;
+}
+
+
+
+.some-expert:hover {
+  box-shadow: 0px 10px 30px 0px rgba(157, 157, 157, 0.2);
+  transition: all 300ms linear 0s;
+}
+
+.some-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 130px;
+}
+
+/* box lar bitdi */
+
+.backgroun-gray-countainer {
+  background-color: #f9f9ff;
+  width: 100%;
+  padding: 140px 0px;
+  margin-top: 140px;
+}
+
+/* mark arxa fonu bitdi */
+
+#mark-box {
+  border: 1px solid #eeeeee;
+  background-color: #f9f9ff;
+  border-radius: 10px;
+  width: 535px;
+  padding-bottom: 20px;
+
+}
+
+#mark-box:hover {
+  background-color: white;
+  box-shadow: 0px 10px 30px 0px rgba(157, 157, 157, 0.2);
+  transition: all 300ms linear 0s;
+}
+
+#mark-text {
+  font-size: 16px;
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+#mark-name {
+  font-family: "Oswald", sans-serif;
+  color: #222222;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#mark-name:hover {
+  color: #fab700;
+}
+
+#mark-ceo {
+  font-size: 14px;
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+#mark-img {
+  display: flex;
+}
+
+#mark-img-text-ceo-box {
+  display: flex;
+  gap: 30px;
+  margin-left: 30px;
+}
+
+#mark-name-ceo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 140px;
+}
+
+#mark-the {
+  padding-top: 45px;
+}
+
+#her-ikis {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* gray olan arxa fon ve boxlar bitdi */
+
+.background-white-countainer {
+  background-color: white;
+  width: 100%;
+}
+
+
+#img-logo-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 130px;
+  padding: 120px 0px;
+}
+
+#img-logo-hover1 {
+  opacity: 0.5;
+}
+
+#img-logo-hover1:hover {
+  opacity: 5;
+  transition: all 300ms linear 0s;
+}
+
+/* logo img 1 */
+
+#img-logo-hover2 {
+  opacity: 0.5;
+}
+
+#img-logo-hover2:hover {
+  opacity: 5;
+  transition: all 300ms linear 0s;
+}
+
+/* logo img 2 */
+
+#img-logo-hover3 {
+  opacity: 0.5;
+}
+
+#img-logo-hover3:hover {
+  opacity: 5;
+  transition: all 300ms linear 0s;
+}
+
+/* logo img 3 */
+
+#img-logo-hover4 {
+  opacity: 0.5;
+}
+
+#img-logo-hover4:hover {
+  opacity: 5;
+  transition: all 300ms linear 0s;
+}
+
+/* logo img 4 */
+
+#img-logo-hover5 {
+  opacity: 0.5;
+}
+
+#img-logo-hover5:hover {
+  opacity: 5;
+  transition: all 300ms linear 0s;
+}
+
+/* logo img 5*/
+/* gray olan conatiner bitdi ikon ve logolor bitdi */
+
+
+
+#footr-background-fon {
+  background-color: #222222;
+  width: 100%;
+  /* height: 600px; */
+  padding: 140px 0px;
+}
+
+/* footer basladqi yer  */
+
+#footer-about-h6 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 17px;
+
+}
+
+#footer-about-p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #777777;
+  padding-bottom: 17px;
+
+}
+
+/* about us bitdi */
+
+#footer-contact-h6 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 17px;
+
+}
+
+#footer-contact-p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #777777;
+  padding-bottom: 17px;
+}
+
+/* conact bitdi */
+
+#footer-a1 {
+  font-family: "Roboto", sans-serif;
+  color: #fab700;
+  font-size: 24px;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+#footer-a2 {
+  font-family: "Roboto", sans-serif;
+  color: #fab700;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* conact herf bitdi */
+
+#footer-the-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+#footer-input-h6 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 17px;
+
+}
+
+#footer-input-p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #777777;
+  padding-bottom: 25px;
+}
+
+#footer-input {
+  width: 100%;
+  border: 1px solid #333333;
+  font-size: 13px;
+  line-height: 40px;
+  padding-right: 40px;
+  height: 40px;
+  color: #999999;
+  border-radius: 20px;
+  background: #fff;
+  padding-left: 20px;
+  outline: none;
+  position: relative;
+}
+#colorlip-p {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 14px;
+}
+
+#colorlip {
+  color: #fab700;
+  text-decoration: none;
+}
+.li-herf{
+  text-decoration: none;
+  color: #222222;
+}
+.li-herf:hover{
+  color: #fab700;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* responsivlikkkk  basladi  */
+
+
+@media screen and (max-width: 1040px) {
+  #footer-newsletter {
+    padding-right: 150px;
+  }
+  
+  #colorlip-p {
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding-right: 95px;
+  }
+}
+/* responsivliki 1040 olan  */
+
+@media screen and (max-width: 900px) {
+  .series {
+    display: none;
+  }
+  
+  .bars {
+    display: block;
+  }
+  
+  .our-boxs {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  
+  .latest-img {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  
+  #footer-about-us {
+    padding-right: 50px;
+  }
+  
+  #footer-input {
+    width: 100%;
+    border: 1px solid #333333;
+    font-size: 13px;
+    line-height: 40px;
+    padding-right: 290px;
+    height: 40px;
+    color: #999999;
+    border-radius: 20px;
+    background: #fff;
+    padding-left: 20px;
+    outline: none;
+    position: relative;
+  }
+  #colorlip-p {
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding-right: 140px;
+  }
+}
+
+/* 900px olan responsivlik */
+
+@media screen and (max-width: 764px) {
+  .bulid-dream {
+    font-size: 30px;
+  }
+  
+  .lorem {
+    font-size: 13px;
+  }
+  
+  .img-3 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .our-the-boxs2{
+    display: flex ;
+    justify-content: center;
+}
+}
+/* 764px olan responsivlikbitdi */
+
+@media screen and (max-width: 625px) {
+  #footer-input {
+    width: 400px;
+    border: 1px solid #333333;
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px;
+    color: #999999;
+    border-radius: 20px;
+    background: #fff;
+    padding-left: 25px;
+    outline: none;
+    position: relative;
+    margin-left: 95px;
+  }
+  #footer-newsletter {
+    text-align: center;
+    padding-right: 30px;
+  }
+  
+  #colorlip-p {
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    font-size: 12px;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  #footer-input-p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #777777;
+    padding-bottom: -15px;
+    margin-left: 90px;
+  }
+    #about-img-box{
+    width: 440px;
+    height: 320px;
+}
+
+#about-us {
+    color: #fff;
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+#img-info{
+  padding-top: -150px;
+}
+
+
+/* sekil olan bitdi */
+
+#about-hisory {
+    font-size: 28px;
+    font-family: "Oswald", sans-serif;
+    color: #222222;
+    /* margin-bottom: 30px; */
+    font-weight: 500;
+}
+
+#about-lorem-p {
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777777;
+    margin-bottom: 30px;
+
+}
+
+#about-button {
+    background: #222222;
+    display: inline-block;
+    color: #fff;
+    line-height: 40px;
+    padding: 0px 28px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+    border: none;
+}
+  .our-the-boxs2{
+    display: flex ;
+    justify-content: center;
+}
+
+}
+
+/* responsivliki 625 olan  */
+
+@media screen and (max-width: 565px) {
+  .dropdown {
+    display: none;
+  }
+  
+  .series {
+    display: none;
+  }
+  
+  .hr {
+    display: none;
+  }
+  
+  .icon {
+    display: none;
+  }
+  
+  .bars {
+    display: block;
+  }
+  
+  .our-boxs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .builder-img {
+    width: 100px;
+  }
+  
+  .building-lorem {
+    padding: 30px 10px;
+  }
+  
+  .our-boxs {
+    gap: 20px;
+  }
+  
+  .our-offerd-fon {
+    padding: 50px 0;
+  }
+  
+  .lorem {
+    padding: 0 10px;
+  }
+  
+  .latest-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  
+  .img-3 {
+    display: grid;
+    gap: 27px;
+    grid-template-columns: repeat(2, 2fr);
+    overflow: hidden;
+  }
+  
+  #mark-box {
+    border: 1px solid #eeeeee;
+    background-color: #f9f9ff;
+    border-radius: 10px;
+    width: 335px;
+    padding-bottom: 20px;
+  }
+    .our-the-boxs2{
+    display: flex ;
+    justify-content: center;
+}
+}
+/* 565px olan responsivlik */
+
+@media screen and (max-width: 465px) {
+  
+  #footer-input {
+    width: 290px;
+    border: 1px solid #333333;
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px;
+    color: #999999;
+    border-radius: 20px;
+    background: #fff;
+    padding-left: 25px;
+    outline: none;
+    position: relative;
+    margin-left: 55px;
+  }
+ 
+  #colorlip-p {
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    font-size: 10px;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  #footer-input-p {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #777777;
+    padding-bottom: -15px;
+    margin-left: 50px;
+  }
+
+  #footer-input-h6 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 30px;
+}
+
+  #about-img-box{
+    width: 360px;
+    height: 260px;
+}
+
+#about-us {
+    color: #fff;
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+/* sekil olan bitdi */
+
+#about-hisory {
+    font-size: 22px;
+    font-family: "Oswald", sans-serif;
+    color: #222222;
+    /* margin-bottom: 30px; */
+    font-weight: 500;
+}
+
+#about-lorem-p {
+    line-height: 24px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777777;
+    margin-bottom: 30px;
+
+}
+#about-button {
+    background: #222222;
+    display: inline-block;
+    color: #fff;
+    line-height: 40px;
+    padding: 0px 28px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+    border: none;
+}
+
+  .our-the-boxs2{
+    display: flex ;
+    justify-content: center;
+}
+}
+
+/* 440px olan responsivlik */
+
+@media screen and (max-width: 391px) {
+  .series {
+    display: none;
+  }
+  
+  .dropdown {
+    display: none;
+  }
+  
+  .hr {
+    display: none;
+  }
+  
+  .icon {
+    display: none;
+  }
+  
+  .img-3 {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .latest-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .our-boxs {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 270;
+  }
+  #mark-box {
+    border: 1px solid #eeeeee;
+    background-color: #f9f9ff;
+    border-radius: 10px;
+    width: 335px;
+    padding-bottom: 20px;
+    
+  }
+    #colorlip-p {
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    font-size: 12px;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  #footer-input-p {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #777777;
+    padding-bottom: -15px;
+    margin-left: 50px;
+  }
+
+  #footer-input-h6 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 30px;
+
+}
+
+ #footer-input {
+    width: 180px;
+    border: 1px solid #333333;
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px;
+    color: #999999;
+    border-radius: 20px;
+    background: #fff;
+    padding-left: 25px;
+    outline: none;
+    position: relative;
+    margin-left: 55px;
+  }
+
+  #about-img-box{
+    width: 300px;
+    height: 180px;
+}
+
+#about-us {
+    color: #fff;
+    font-size: px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+/* sekil olan bitdi */
+
+#about-hisory {
+    font-size: 19px;
+    font-family: "Oswald", sans-serif;
+    color: #222222;
+    font-weight: 500;
+}
+
+#about-lorem-p {
+    line-height: 24px;
+    font-size: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777777;
+    margin-bottom: 30px;
+
+}
+#about-button {
+    background: #222222;
+    display: inline-block;
+    color: #fff;
+    line-height: 40px;
+    padding: 0px 28px;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+    border: none;
+}
+
+#footer-newsletter{
+   max-width: max-content;
+   height: max-content;
+
+}
+
+  .our-the-boxs2{
+    display: flex ;
+    justify-content: center;
+}
+}
+
+/* 391px olan responsivlik bitdi */
+
+/* responsivlikkkk bitdi */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
